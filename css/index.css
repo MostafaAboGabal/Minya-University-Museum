@@ -1,0 +1,82 @@
+:root{
+    --dark-color:#19283f;
+    --green-color:#33d1cc;
+    --red-color:#ff3150;
+    --yellow-color:#ffc400;
+    --section-color:#eff7fa;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: "Cairo", sans-serif;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*end global*/
+@media (min-width: 768px){
+    .container{
+        width: 750px;
+    }
+}
+@media (min-width: 992px){
+    .container{
+        width: 940px;
+    }
+}
+@media (min-width: 1200px){
+    .container{
+        width: 1170px;
+    }
+}
+body{
+    font-family: "IBM Plex Mono", monospace;
+    /*height: 10000px;*/
+}
+/*start navbar*/
+.navbar{
+    background-color: var(--dark-color);
+}
+.navbar .container img{
+    width: 50px;
+    display: flex;
+}
+@media (max-width: 768px){
+    .navbar .container img
+    {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    }
+}
+.navbar .links{
+    display: flex;
+}
+.navbar .links a{
+    color: aliceblue;
+}
+.navbar .search i{
+    color: white;
+}
+/*start landing*/
+.landing{
+    background-image: url(المتحف.jfif);
+    background-size:contain;
+    height: 100vh;
+
+}
+.landing p{
+    font-size: 22px;
+}
